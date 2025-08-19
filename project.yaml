@@ -1,0 +1,13 @@
+id: iomba
+title: Imaging Ontology for Multi-modal Biomedical Applications
+github_org: Buffalo-Ontology-Group
+git_user: spborder
+git_main_branch: main
+repo: IOMBA
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: obi

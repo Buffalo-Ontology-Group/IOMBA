@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/iomba
+
+idspace: IOMBA
+base_url: /obo/iomba
+
+products:
+- iomba.owl: https://raw.githubusercontent.com/Buffalo-Ontology-Group/IOMBA/main/iomba.owl
+- iomba.obo: https://raw.githubusercontent.com/Buffalo-Ontology-Group/IOMBA/main/iomba.obo
+
+term_browser: ontobee
+example_terms:
+- IOMBA_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Buffalo-Ontology-Group/IOMBA/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Buffalo-Ontology-Group/IOMBA/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/IOMBA?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Buffalo-Ontology-Group/IOMBA/main/
+

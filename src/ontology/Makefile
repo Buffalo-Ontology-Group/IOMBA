@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                8ed7e13ed638b30b0ab7e4ca0a903b515624151abf3d6b0af5b2c95a30eb8b3f
+CONFIG_HASH=                acd79644bf212217bd30fc4b2f5c9140a5103dd81395e5f1bd362159afcf4113
 
 
 # ----------------------------------------
@@ -408,6 +408,15 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 		 $(ANNOTATE_CONVERT_FILE)
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
+
+## Module for ontology: obi (mirror)
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
 
 endif # IMP=true
 

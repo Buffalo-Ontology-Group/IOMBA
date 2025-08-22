@@ -11,3 +11,4 @@ export_formats:
 import_group:
   products:
     - id: obi
+      module_type: mirror

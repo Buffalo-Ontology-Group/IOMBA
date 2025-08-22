@@ -78,6 +78,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000072>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -624,6 +625,14 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000071> "202
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000071> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000071> "convolutional feature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000071> <http://purl.obolibrary.org/obo/IOMBA_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/IOMBA_0000072> (image data set channel extraction)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000072> "The process through which one or more channels are extracted from an image data set for downstream analysis"@en-us)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000072> "2025-08-22T18:47:23Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000072> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000072> "image data set channel extraction"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000072> <http://purl.obolibrary.org/obo/OBI_0003355>)
 
 
 )

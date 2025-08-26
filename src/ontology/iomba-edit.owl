@@ -79,6 +79,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000075>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -485,7 +488,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000053> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000054> (RGB color)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000054> "A channel intensity quality derived from an image which contains RGB color channels."@en-us)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000054> "A channel intensity quality derived from an image which contains RGB (red, green, blue) color channels."@en-us)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000054> "2025-08-22T15:04:03Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000054> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000054> "RGB color"@en)
@@ -536,6 +539,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000059> <http://purl.obolibrar
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000060> "The difference in relative position between one or more spatial regions."@en-us)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000060> "2025-08-22T15:15:34Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000060> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000060> "Need sub-classes for different types of distance measurements? (e.g., Euclidean, Manhattan, chamfer types (chessboard, taxicab), etc.)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000060> "distance"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000060> <http://purl.obolibrary.org/obo/IOMBA_0000041>)
 
@@ -633,6 +637,27 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000072> "202
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000072> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000072> "image data set channel extraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000072> <http://purl.obolibrary.org/obo/OBI_0003355>)
+
+# Class: <http://purl.obolibrary.org/obo/IOMBA_0000073> (binarization process)
+
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000073> "2025-08-25T18:33:19Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000073> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000073> "binarization process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000073> <http://purl.obolibrary.org/obo/OBI_0003355>)
+
+# Class: <http://purl.obolibrary.org/obo/IOMBA_0000074> (thresholding)
+
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000074> "2025-08-25T18:33:23Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000074> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000074> "thresholding"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000074> <http://purl.obolibrary.org/obo/IOMBA_0000073>)
+
+# Class: <http://purl.obolibrary.org/obo/IOMBA_0000075> (Otsu's thresholding method)
+
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/IOMBA_0000075> "2025-08-25T18:33:40Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000075> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000075> "Otsu's thresholding method"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000075> <http://purl.obolibrary.org/obo/IOMBA_0000074>)
 
 
 )

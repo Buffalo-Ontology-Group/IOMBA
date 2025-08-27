@@ -1,5 +1,5 @@
 Prefix(:=<http://purl.obolibrary.org/obo/iomba.owl#>)
-Prefix(dc:=<http://purl.org/dc/terms>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -82,6 +82,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000075>))
+Declaration(AnnotationProperty(<http://purl.org/dc/termsdate>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -115,7 +116,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000000> "r
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000001> (binary image process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000001> "An image data set analysis carried out on a binary image data set"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000001> "2025-08-20T16:36:18Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000001> "2025-08-20T16:36:18Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000001> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000001> "binary image process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000001> <http://purl.obolibrary.org/obo/OBI_0003355>)
@@ -123,7 +124,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000001> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000002> (colorspace conversion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000002> "The process through which an image's colorspace is changed. This may or may not involve a change in the number of channels of an image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000002> "2025-08-20T16:36:25Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000002> "2025-08-20T16:36:25Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000002> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000002> "colorspace conversion"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000002> <http://purl.obolibrary.org/obo/OBI_0003355>)
@@ -131,7 +132,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000002> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000003> (image annotation process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000003> "The process through which annotations are assigned to an image data set. These may consist of either spatial regions within the image's boundaries or classifications for the image as a whole entity."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000003> "2025-08-20T16:36:32Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000003> "2025-08-20T16:36:32Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000003> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000003> "image annotation process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000003> <http://purl.obolibrary.org/obo/OBI_0003355>)
@@ -139,7 +140,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000003> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000004> (image filter application)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000004> "An image data set analysis process in which a filter is applied to the pixels within an image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000004> "2025-08-20T16:36:38Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000004> "2025-08-20T16:36:38Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000004> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000004> "image filter application"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000004> <http://purl.obolibrary.org/obo/OBI_0003355>)
@@ -148,7 +149,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000004> ObjectSomeValuesFrom(<
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000005> (image data set feature extraction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000005> "An image data set analysis resulting in quantitative values."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000005> "2025-08-20T16:36:49Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000005> "2025-08-20T16:36:49Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000005> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000005> "Possible overlap with OBI_0001028, difference in 'has specified input'"@en-us)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000005> "image data set feature extraction"@en)
@@ -158,7 +159,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000005> ObjectSomeValuesFrom(<
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000006> (image morphological operation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000006> "A binary image process which effects the morphology of non-zero objects contained within an image data set"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000006> "2025-08-20T17:20:11Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000006> "2025-08-20T17:20:11Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000006> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000006> "image morphological operation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000006> <http://purl.obolibrary.org/obo/IOMBA_0000001>)
@@ -166,7 +167,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000006> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000007> (morphological erosion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000007> "A binary image morphological process wherein the value of a pixel is set to zero if any of the neighboring pixels have the value zero"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000007> "2025-08-20T17:20:20Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000007> "2025-08-20T17:20:20Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000007> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000007> "morphological erosion"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000007> <http://purl.obolibrary.org/obo/IOMBA_0000006>)
@@ -174,7 +175,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000007> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000008> (morphological dilation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000008> "A binary image morphological process wherein the value of a pixel is set to one if any of the neighboring pixels have the value of one."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000008> "2025-08-20T17:20:24Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000008> "2025-08-20T17:20:24Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000008> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000008> "morphological dilation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000008> <http://purl.obolibrary.org/obo/IOMBA_0000006>)
@@ -182,7 +183,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000008> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000009> (morphological closing)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000009> "A binary image morphological process characterized by a morphological dilation followed by an erosion. Used for filling holes in a binary image while preserving the size and shape of objects."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000009> "2025-08-20T17:20:30Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000009> "2025-08-20T17:20:30Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000009> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000009> "morphological closing"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000009> <http://purl.obolibrary.org/obo/IOMBA_0000006>)
@@ -190,7 +191,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000009> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000010> (morphological opening)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000010> "A binary image morphological process characterized by a morphological erosion followed by a dilation. Used for removing small objects and thin lines while preserving the size and shape of objects in a binary image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000010> "2025-08-20T17:20:34Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000010> "2025-08-20T17:20:34Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000010> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000010> "morphological opening"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000010> <http://purl.obolibrary.org/obo/IOMBA_0000006>)
@@ -198,7 +199,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000010> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000011> (HSV conversion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000011> "Conversion into the HSV colorspace. Values at each pixel location can be interpreted in terms of their hue (H), saturation (S), and value (V)."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000011> "2025-08-20T17:20:42Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000011> "2025-08-20T17:20:42Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000011> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000011> "HSV conversion"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000011> <http://purl.obolibrary.org/obo/IOMBA_0000002>)
@@ -206,7 +207,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000011> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000012> (LAB conversion)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000012> "Conversion into the LAB or CIELAB colorspace. Values at each pixel location can be interpreted in terms of their lightness (L), green-red (A, or a*), and blue-yellow (B, or b*)."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000012> "2025-08-20T17:20:48Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000012> "2025-08-20T17:20:48Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000012> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000012> "LAB conversion"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000012> <http://purl.obolibrary.org/obo/IOMBA_0000002>)
@@ -214,7 +215,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000012> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000013> (stain deconvolution)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000013> "A method for separating histologial stains present in an image originally proposed by Ruifrok et al. (2001)"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000013> "2025-08-20T17:20:53Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000013> "2025-08-20T17:20:53Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000013> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000013> "stain deconvolution"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000013> <http://purl.obolibrary.org/obo/IOMBA_0000002>)
@@ -222,7 +223,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000013> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000014> (automated image annotation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000014> "The process through which annotations are assigned to an image data set as a result of an automated process without a human annotator."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000014> "2025-08-20T17:21:02Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000014> "2025-08-20T17:21:02Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000014> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000014> "automated image annotation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000014> <http://purl.obolibrary.org/obo/IOMBA_0000003>)
@@ -230,7 +231,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000014> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000015> (manual image annotation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000015> "The process through which annotations are added to an image data set by a human annotator"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000015> "2025-08-20T17:21:06Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000015> "2025-08-20T17:21:06Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000015> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000015> "manual image annotation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000015> <http://purl.obolibrary.org/obo/IOMBA_0000003>)
@@ -238,7 +239,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000015> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000016> (image data set object feature extraction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000016> "The process through which quantitative features are extracted describing annotated objects contained within the image's boundaries."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000016> "2025-08-20T17:21:36Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000016> "2025-08-20T17:21:36Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000016> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000016> "image data set object feature extraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000016> <http://purl.obolibrary.org/obo/IOMBA_0000005>)
@@ -246,7 +247,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000016> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000017> (image data set image feature extraction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000017> "The process through which quantitative features are extracted for an image data set independent of any annotated objects contained in the image's boundaries."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000017> "2025-08-20T17:21:47Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000017> "2025-08-20T17:21:47Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000017> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000017> "image data set image feature extraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000017> <http://purl.obolibrary.org/obo/IOMBA_0000005>)
@@ -254,7 +255,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000017> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000018> (convolutional filter)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000018> "A type of image filter wherin specific textural patterns are extracted through the process of convolution."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000018> "2025-08-20T17:22:04Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000018> "2025-08-20T17:22:04Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000018> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000018> "convolutional filter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000018> <http://purl.obolibrary.org/obo/IOMBA_0000004>)
@@ -262,7 +263,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000018> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000019> (edge filter)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000019> "A type of image filter designed to identify sharp changes in image intensity corresponding to edges."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000019> "2025-08-20T17:22:08Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000019> "2025-08-20T17:22:08Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000019> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000019> "edge filter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000019> <http://purl.obolibrary.org/obo/IOMBA_0000004>)
@@ -270,7 +271,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000019> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000020> (binary image data set)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000020> "An image data set consisting of a single channel wherein each pixel contains a value of either zero or one."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000020> "2025-08-20T17:50:01Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000020> "2025-08-20T17:50:01Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000020> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000020> "Current definition has binary image data set equivalent to a single channel image data set and not allowing for multiple binary channels"@en-us)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000020> "In this case, the value of each pixel is not required to indicate classification of that pixel. Classification of pixels to produce an image segmentation map (with two labels or background and another label) may be the result of a successive process."@en-us)
@@ -279,8 +280,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000020> <http://purl.obolibrar
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000021> (grayscale image data set)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000021> "An image data set consisting of a single channel where each pixel value corresponds to some intensity measurement."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000021> "2025-08-20T17:50:08Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000021> "An image data set consisting of a single channel where each pixel value corresponds to some intensity measurement. The resulting image may or may not have attached metadata headers."@en-us)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000021> "2025-08-20T17:50:08Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000021> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000021> "Current definition implies that each pixel value is a measurement. As a sub-class of computed image data set should this be restricted to only cover those image data sets which are rendered grayscale as a result of some image data set analysis?"@en-us)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000021> "grayscale image data set"@en)
@@ -289,7 +290,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000021> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000022> (shape)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000022> "A structure quality characterizing the pattern of the external boundaries of an object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000022> "2025-08-20T18:03:47Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000022> "2025-08-20T18:03:47Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000022> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000022> "shape"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000022> <http://purl.obolibrary.org/obo/PATO_0000141>)
@@ -297,7 +298,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000022> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000023> (eccentricity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000023> "The ratio between the major and minor axis lengths of an object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000023> "2025-08-20T18:03:54Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000023> "2025-08-20T18:03:54Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000023> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000023> "eccentricity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000023> <http://purl.obolibrary.org/obo/IOMBA_0000028>)
@@ -305,7 +306,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000023> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000024> (solidity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000024> "The ratio between the area of an object and the convex hull of that same object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000024> "2025-08-20T18:04:02Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000024> "2025-08-20T18:04:02Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000024> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000024> "solidity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000024> <http://purl.obolibrary.org/obo/IOMBA_0000028>)
@@ -313,7 +314,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000024> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000025> (2-D extent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000025> "A size quality inhering in a bearer by virtue of the bearer's extension in two dimensions"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000025> "2025-08-20T18:04:10Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000025> "2025-08-20T18:04:10Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000025> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000025> "2-D extent"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000025> <http://purl.obolibrary.org/obo/PATO_0000117>)
@@ -321,7 +322,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000025> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000026> (area)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000026> "A 2-D extent quality inhering in a bearer by virtue of the bearer's amount of 2-dimensional space it occupies."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000026> "2025-08-20T18:04:12Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000026> "2025-08-20T18:04:12Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000026> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000026> "area"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000026> <http://purl.obolibrary.org/obo/IOMBA_0000025>)
@@ -329,7 +330,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000026> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000027> (data annotator role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000027> "A worker role responsible for providing annotations to a set of data for use in some analytical process."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000027> "2025-08-20T18:07:08Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000027> "2025-08-20T18:07:08Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000027> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000027> "data annotator role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000027> <http://purl.obolibrary.org/obo/OBI_0000116>)
@@ -337,7 +338,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000027> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000028> (2-D shape)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000028> "The shape of an object as represented in 2 dimensions."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000028> "2025-08-20T18:09:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000028> "2025-08-20T18:09:21Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000028> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000028> "2-D shape"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000028> <http://purl.obolibrary.org/obo/IOMBA_0000022>)
@@ -345,7 +346,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000028> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000029> (3-D shape)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000029> "The shape of an object as represented in 3 dimensions."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000029> "2025-08-20T18:30:43Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000029> "2025-08-20T18:30:43Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000029> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000029> "3-D shape"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000029> <http://purl.obolibrary.org/obo/IOMBA_0000022>)
@@ -353,7 +354,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000029> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000030> (sphericity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000030> "A measure of how closely an object resembles a sphere. The ratio of the surface area of a sphere with the same volume to the object's surface area."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000030> "2025-08-20T18:30:51Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000030> "2025-08-20T18:30:51Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000030> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000030> "sphericity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000030> <http://purl.obolibrary.org/obo/IOMBA_0000029>)
@@ -361,7 +362,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000030> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000031> (major axis length)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000031> "The length of the major axis of the ellipse that has the same normalized second central moments as the region"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000031> "2025-08-20T18:31:31Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000031> "2025-08-20T18:31:31Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000031> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000031> "major axis length"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000031> <http://purl.obolibrary.org/obo/IOMBA_0000028>)
@@ -369,7 +370,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000031> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000032> (minor axis length)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000032> "The length of the minor axis of the ellipse that has the same normalized second central moments as the region"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000032> "2025-08-20T18:31:35Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000032> "2025-08-20T18:31:35Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000032> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000032> "minor axis length"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000032> <http://purl.obolibrary.org/obo/IOMBA_0000028>)
@@ -377,7 +378,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000032> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000033> (convex area)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000033> "The amount of area occupied by the convex hull of an object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000033> "2025-08-20T18:32:43Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000033> "2025-08-20T18:32:43Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000033> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000033> "convex area"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000033> <http://purl.obolibrary.org/obo/IOMBA_0000026>)
@@ -385,7 +386,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000033> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000034> (filled area)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000034> "The sum of the area occupied by a 2-dimensional object and the area of any holes located within its outer boundaries."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000034> "2025-08-20T18:32:48Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000034> "2025-08-20T18:32:48Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000034> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000034> "filled area"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000034> <http://purl.obolibrary.org/obo/IOMBA_0000026>)
@@ -393,7 +394,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000034> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000035> (perimeter)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000035> "A 2-D extent quality characterized by the length of the outer boundary of a 2-dimensional object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000035> "2025-08-20T18:33:59Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000035> "2025-08-20T18:33:59Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000035> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000035> "perimeter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000035> <http://purl.obolibrary.org/obo/IOMBA_0000025>)
@@ -401,7 +402,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000035> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000037> (spatial position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000037> "Where an object is located in space relative to some origin point."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000037> "2025-08-20T19:07:26Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000037> "2025-08-20T19:07:26Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000037> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000037> "spatial position"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000037> <http://purl.obolibrary.org/obo/PATO_0000141>)
@@ -409,7 +410,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000037> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000038> (centroid)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000038> "The mean position of all points in an object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000038> "2025-08-20T19:07:37Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000038> "2025-08-20T19:07:37Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000038> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000038> "centroid"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000038> <http://purl.obolibrary.org/obo/IOMBA_0000037>)
@@ -417,7 +418,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000038> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000039> (centroid local)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000039> "The centroid of an object with coordinates measured relative to the bounding box of an object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000039> "2025-08-20T19:07:45Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000039> "2025-08-20T19:07:45Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000039> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000039> "centroid local"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000039> <http://purl.obolibrary.org/obo/IOMBA_0000038>)
@@ -425,7 +426,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000039> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000041> (relative position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000041> "The differential positions between multiple objects representing the spatial distribution of things within an entity."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000041> "2025-08-20T19:08:05Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000041> "2025-08-20T19:08:05Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000041> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000041> "relative position"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000041> <http://purl.obolibrary.org/obo/IOMBA_0000037>)
@@ -433,7 +434,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000041> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000042> (sensor detection quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000042> "A quality which is derived from sensor detection units."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000042> "2025-08-22T14:58:18Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000042> "2025-08-22T14:58:18Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000042> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000042> "sensor detection quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000042> <http://purl.obolibrary.org/obo/BFO_0000019>)
@@ -441,7 +442,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000042> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000044> (image intensity quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000044> "A quality related to intensities of pixels collected from some imaging device."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000044> "2025-08-22T15:00:52Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000044> "2025-08-22T15:00:52Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000044> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000044> "image intensity quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000044> <http://purl.obolibrary.org/obo/IOMBA_0000042>)
@@ -449,7 +450,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000044> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000045> (texture)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000045> "An intensity quality characterized by varying intensities of neighboring pixels."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000045> "2025-08-22T15:00:59Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000045> "2025-08-22T15:00:59Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000045> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000045> "texture"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000045> <http://purl.obolibrary.org/obo/IOMBA_0000044>)
@@ -457,7 +458,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000045> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000047> (GLCM feature)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000047> "A feature derived from the Gray-Level Co-occurrence Matrix (GLCM), a histogram of the number of times a grayscale value is repeated over a given region."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000047> "2025-08-22T15:01:25Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000047> "2025-08-22T15:01:25Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000047> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000047> "GLCM feature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000047> <http://purl.obolibrary.org/obo/IOMBA_0000045>)
@@ -465,7 +466,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000047> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000048> (SIFT feature)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000048> "SIFT, or Scale Invariant Feature Transform, features are extracted from automatically determined key points following successive levels of Gaussian blurring."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000048> "2025-08-22T15:01:36Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000048> "2025-08-22T15:01:36Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000048> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000048> "SIFT feature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000048> <http://purl.obolibrary.org/obo/IOMBA_0000045>)
@@ -473,7 +474,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000048> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000049> (Haar-like feature)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000049> "A method for extracting high-dimensional features from images derived from Haar wavelets. From Wikipedia, \"[a] Haar-like feature considers adjacent rectangular regions at a specific location in a detection window, sums up the pixel intensities in each region and calculates the difference between these sums.\""@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000049> "2025-08-22T15:02:28Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000049> "2025-08-22T15:02:28Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000049> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000049> "Haar-like feature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000049> <http://purl.obolibrary.org/obo/IOMBA_0000045>)
@@ -481,7 +482,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000049> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000053> (channel intensity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000053> "A quality related to image pixel intensities found within individual channels of an image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000053> "2025-08-22T15:03:56Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000053> "2025-08-22T15:03:56Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000053> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000053> "channel intensity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000053> <http://purl.obolibrary.org/obo/IOMBA_0000044>)
@@ -489,7 +490,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000053> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000054> (RGB color)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000054> "A channel intensity quality derived from an image which contains RGB (red, green, blue) color channels."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000054> "2025-08-22T15:04:03Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000054> "2025-08-22T15:04:03Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000054> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000054> "RGB color"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000054> <http://purl.obolibrary.org/obo/IOMBA_0000053>)
@@ -497,7 +498,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000054> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000055> (red)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000055> "Intensity of the first channel in an RGB image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000055> "2025-08-22T15:04:07Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000055> "2025-08-22T15:04:07Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000055> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000055> "red"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000055> <http://purl.obolibrary.org/obo/IOMBA_0000054>)
@@ -505,7 +506,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000055> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000056> (green)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000056> "Intensity of the second channel in an RGB image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000056> "2025-08-22T15:04:10Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000056> "2025-08-22T15:04:10Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000056> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000056> "green"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000056> <http://purl.obolibrary.org/obo/IOMBA_0000054>)
@@ -513,7 +514,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000056> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000057> (blue)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000057> "Intensity of the third channel in an RGB image."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000057> "2025-08-22T15:04:12Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000057> "2025-08-22T15:04:12Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000057> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000057> "blue"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000057> <http://purl.obolibrary.org/obo/IOMBA_0000054>)
@@ -521,7 +522,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000057> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000058> (fluorescent channel intensity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000058> "A channel intensity quality related to a fluorescent image captured using a non-RGB fluorescent imaging technique."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000058> "2025-08-22T15:04:24Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000058> "2025-08-22T15:04:24Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000058> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000058> "fluorescent channel intensity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000058> <http://purl.obolibrary.org/obo/IOMBA_0000053>)
@@ -529,7 +530,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000058> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000059> (graph position)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000059> "The position of an object in a graph structure consisting of more than one object."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000059> "2025-08-22T15:15:28Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000059> "2025-08-22T15:15:28Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000059> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000059> "graph position"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000059> <http://purl.obolibrary.org/obo/IOMBA_0000041>)
@@ -537,7 +538,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000059> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000060> (distance)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000060> "The difference in relative position between one or more spatial regions."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000060> "2025-08-22T15:15:34Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000060> "2025-08-22T15:15:34Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000060> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOMBA_0000060> "Need sub-classes for different types of distance measurements? (e.g., Euclidean, Manhattan, chamfer types (chessboard, taxicab), etc.)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000060> "distance"@en)
@@ -546,7 +547,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000060> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000061> (width)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000061> "The distance between two points measured across a single entity without touching any points external to that entity."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000061> "2025-08-22T15:16:55Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000061> "2025-08-22T15:16:55Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000061> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000061> "width"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000061> <http://purl.obolibrary.org/obo/IOMBA_0000060>)
@@ -555,7 +556,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000061> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000063> "Difference in intensities between adjacent pixels. For a constant image consisting of a single grayscale intensity value, GLCM contrast is zero."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000063> "https://www.mathworks.com/help/images/ref/graycoprops.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000063> "2025-08-22T17:03:07Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000063> "2025-08-22T17:03:07Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000063> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000063> "contrast"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000063> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -564,7 +565,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000063> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000064> "Measure of the difference in values in the GLCM. The sum of absolute differences between gray-level values, weighted by the frequency of occurrence of each pair of values."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000064> "https://seadas.gsfc.nasa.gov/help-9.0.0/operators/GLCM.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000064> "2025-08-22T17:03:12Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000064> "2025-08-22T17:03:12Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000064> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000064> "dissimilarity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000064> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -573,7 +574,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000064> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000065> "Measures how close the distribution of elements in the GLCM are to a diagonal matrix."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000065> "https://www.mathworks.com/help/images/ref/graycoprops.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000065> "2025-08-22T17:03:17Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000065> "2025-08-22T17:03:17Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000065> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000065> "homogeneity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000065> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -582,7 +583,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000065> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000066> "The sum of squared elements in the GLCM."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000066> "https://scikit-image.org/docs/0.25.x/api/skimage.feature.html#skimage.feature.graycoprops")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000066> "2025-08-22T17:03:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000066> "2025-08-22T17:03:21Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000066> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000066> "angular second momentum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000066> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -591,7 +592,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000066> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000067> "The square root of the sum of squared elements in the GLCM. For an image consisting of a single grayscale intensity value, GLCM energy is 1."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000067> "https://www.mathworks.com/help/images/ref/graycoprops.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000067> "2025-08-22T17:03:24Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000067> "2025-08-22T17:03:24Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000067> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000067> "energy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000067> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -600,7 +601,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000067> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000068> "Used to measure how strongly adjacent pixel intensity values impact each other."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000068> "https://www.mathworks.com/help/images/ref/graycoprops.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000068> "2025-08-22T17:03:27Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000068> "2025-08-22T17:03:27Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000068> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000068> "correlation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000068> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -609,7 +610,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000068> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000069> "The randomness or complexity of the texture in an image. The negative sum of the product of the frequency of occurrence of each gray-level value and the log of its value."@en-us)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IOMBA_0000069> "https://seadas.gsfc.nasa.gov/help-9.0.0/operators/GLCM.html")
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000069> "2025-08-22T17:03:36Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000069> "2025-08-22T17:03:36Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000069> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000069> "entropy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000069> <http://purl.obolibrary.org/obo/IOMBA_0000047>)
@@ -617,7 +618,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000069> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000070> (distance transform)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000070> "The process through which pixels in the foreground of a binary image (with a value of 1) are replaced with the distance to the nearest background element (pixel with a value of zero)."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000070> "2025-08-22T17:41:53Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000070> "2025-08-22T17:41:53Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000070> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000070> "distance transform"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000070> <http://purl.obolibrary.org/obo/IOMBA_0000001>)
@@ -625,7 +626,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000070> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000071> (convolutional feature)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000071> "A class of texture features derived from convolutional filter banks. Used in the context of convolutional neural networks for image-related tasks."@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000071> "2025-08-22T17:50:19Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000071> "2025-08-22T17:50:19Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000071> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000071> "convolutional feature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000071> <http://purl.obolibrary.org/obo/IOMBA_0000045>)
@@ -633,28 +634,28 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000071> <http://purl.obolibrar
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000072> (image data set channel extraction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000072> "The process through which one or more channels are extracted from an image data set for downstream analysis"@en-us)
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000072> "2025-08-22T18:47:23Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000072> "2025-08-22T18:47:23Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000072> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000072> "image data set channel extraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000072> <http://purl.obolibrary.org/obo/OBI_0003355>)
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000073> (binarization process)
 
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000073> "2025-08-25T18:33:19Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000073> "2025-08-25T18:33:19Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000073> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000073> "binarization process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000073> <http://purl.obolibrary.org/obo/OBI_0003355>)
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000074> (thresholding)
 
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000074> "2025-08-25T18:33:23Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000074> "2025-08-25T18:33:23Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000074> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000074> "thresholding"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000074> <http://purl.obolibrary.org/obo/IOMBA_0000073>)
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000075> (Otsu's thresholding method)
 
-AnnotationAssertion(dc:date <http://purl.obolibrary.org/obo/IOMBA_0000075> "2025-08-25T18:33:40Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000075> "2025-08-25T18:33:40Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000075> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000075> "Otsu's thresholding method"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000075> <http://purl.obolibrary.org/obo/IOMBA_0000074>)

@@ -10,6 +10,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/iomba.owl>
 Import(<http://purl.obolibrary.org/obo/iomba/imports/obi_import.owl>)
+Import(<http://purl.obolibrary.org/obo/iomba/imports/pato_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Imaging Ontology for Multi-modal Biomedical Applications")
@@ -39,8 +40,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000024>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000025>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000029>))
@@ -49,7 +48,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000034>))
-Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000039>))
@@ -82,6 +80,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IOMBA_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001323>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001709>))
 Declaration(AnnotationProperty(<http://purl.org/dc/termsdate>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -311,22 +311,6 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_00
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000024> "solidity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000024> <http://purl.obolibrary.org/obo/IOMBA_0000028>)
 
-# Class: <http://purl.obolibrary.org/obo/IOMBA_0000025> (2-D extent)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000025> "A size quality inhering in a bearer by virtue of the bearer's extension in two dimensions"@en-us)
-AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000025> "2025-08-20T18:04:10Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000025> <https://orcid.org/0000-0002-8806-6965>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000025> "2-D extent"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000025> <http://purl.obolibrary.org/obo/PATO_0000117>)
-
-# Class: <http://purl.obolibrary.org/obo/IOMBA_0000026> (area)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000026> "A 2-D extent quality inhering in a bearer by virtue of the bearer's amount of 2-dimensional space it occupies."@en-us)
-AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000026> "2025-08-20T18:04:12Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000026> <https://orcid.org/0000-0002-8806-6965>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000026> "area"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000026> <http://purl.obolibrary.org/obo/IOMBA_0000025>)
-
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000027> (data annotator role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000027> "A worker role responsible for providing annotations to a set of data for use in some analytical process."@en-us)
@@ -381,7 +365,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000033> "2025-08-20T18:32:43Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000033> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000033> "convex area"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000033> <http://purl.obolibrary.org/obo/IOMBA_0000026>)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000033> <http://purl.obolibrary.org/obo/PATO_0001323>)
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000034> (filled area)
 
@@ -389,15 +373,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000034> "2025-08-20T18:32:48Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000034> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000034> "filled area"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000034> <http://purl.obolibrary.org/obo/IOMBA_0000026>)
-
-# Class: <http://purl.obolibrary.org/obo/IOMBA_0000035> (perimeter)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOMBA_0000035> "A 2-D extent quality characterized by the length of the outer boundary of a 2-dimensional object."@en-us)
-AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/IOMBA_0000035> "2025-08-20T18:33:59Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000035> <https://orcid.org/0000-0002-8806-6965>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000035> "perimeter"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000035> <http://purl.obolibrary.org/obo/IOMBA_0000025>)
+SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000034> <http://purl.obolibrary.org/obo/PATO_0001323>)
 
 # Class: <http://purl.obolibrary.org/obo/IOMBA_0000037> (spatial position)
 
@@ -659,6 +635,22 @@ AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/o
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/IOMBA_0000075> <https://orcid.org/0000-0002-8806-6965>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOMBA_0000075> "Otsu's thresholding method"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOMBA_0000075> <http://purl.obolibrary.org/obo/IOMBA_0000074>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001323> (area)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001323> "A 2-D extent quality inhering in a bearer by virtue of the bearer's amount of 2-dimensional space it occupies."@en-us)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/PATO_0001323> "2025-08-20T18:04:12Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/PATO_0001323> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001323> "area"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001323> <http://purl.obolibrary.org/obo/PATO_0001709>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001709> (2-D extent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001709> "A size quality inhering in a bearer by virtue of the bearer's extension in two dimensions"@en-us)
+AnnotationAssertion(<http://purl.org/dc/termsdate> <http://purl.obolibrary.org/obo/PATO_0001709> "2025-08-20T18:04:10Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/PATO_0001709> <https://orcid.org/0000-0002-8806-6965>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001709> "2-D extent"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001709> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
 
 )

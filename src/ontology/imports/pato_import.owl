@@ -1,0 +1,153 @@
+Prefix(:=<http://purl.obolibrary.org/obo/iomba/imports/pato_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/iomba/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/iomba/releases/2025-09-02/imports/pato_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl>)
+Annotation(owl:versionInfo "2025-09-02")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001296>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001323>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001708>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001709>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001711>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070060>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000014> (color)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000014> "color")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000014> <http://purl.obolibrary.org/obo/PATO_0000051>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000014> <http://purl.obolibrary.org/obo/PATO_0001300>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000052> (shape)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000117> "size")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000117> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000119> (height)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000119> "height")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000119> <http://purl.obolibrary.org/obo/PATO_0001708>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000141> (structure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000141> "structure")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000141> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001296> (luminous flux)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001296> "luminous flux")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001296> <http://purl.obolibrary.org/obo/PATO_0001300>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001300> (optical quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001300> "optical quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001300> <http://purl.obolibrary.org/obo/PATO_0070060>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001323> (area)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001323> "area")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001323> <http://purl.obolibrary.org/obo/PATO_0001709>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001334> (diameter)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001334> "diameter")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001334> <http://purl.obolibrary.org/obo/PATO_0001708>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001708> (1-D extent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001708> "1-D extent")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001708> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001709> (2-D extent)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001709> "2-D extent")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001709> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001711> (perimeter)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001711> "perimeter")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001711> <http://purl.obolibrary.org/obo/PATO_0001708>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002006> (2-D shape)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002006> "2-D shape")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002006> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002198> (quality of a substance)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002198> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002198> "quality of a substance")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002198> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0070060> (quality of interaction of a substance with electromagnetic radiation)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0070060> "quality of interaction of a substance with electromagnetic radiation")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0070060> <http://purl.obolibrary.org/obo/PATO_0002198>)
+
+
+)

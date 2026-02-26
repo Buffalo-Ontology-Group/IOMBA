@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                8ed7e13ed638b30b0ab7e4ca0a903b515624151abf3d6b0af5b2c95a30eb8b3f
+CONFIG_HASH=                c51922aa8d81999560e545456499aa86b87ded5d748c2a63d8d0d3ea5429d9bc
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  obi
+IMPORTS =  obi pato
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -409,6 +409,15 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms.txt \
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: obi (mirror)
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+		               --subset-decls true --synonym-decls true \
+		               --add-source true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
+
 endif # IMP=true
 
 .PHONY: refresh-imports
@@ -448,6 +457,14 @@ ifeq ($(MIR),true)
 mirror-obi: | $(TMPDIR)
 	curl -L $(OBOBASE)/obi.owl --create-dirs -o $(TMPDIR)/obi-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/obi-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: pato
+.PHONY: mirror-pato
+.PRECIOUS: $(MIRRORDIR)/pato.owl
+mirror-pato: | $(TMPDIR)
+	curl -L $(OBOBASE)/pato.owl --create-dirs -o $(TMPDIR)/pato-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/pato-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
